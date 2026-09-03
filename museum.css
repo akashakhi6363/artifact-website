@@ -1,85 +1,44 @@
 :root {
     --black: #090a0d;
-
     --black-light: #111318;
-
     --panel: #15171c;
-
     --cream: #f3eee5;
-
     --muted: #aaa39a;
-
     --gold: #c9953d;
-
     --gold-light: #e1b35e;
-
     --gold-dark: #76521e;
-
     --border: rgba(201, 149, 61, .30);
-
-    --white-border:
-        rgba(255, 255, 255, .10);
-
-
-
-    --ease:
-        cubic-bezier(.22, 1, .36, 1);
-
+    --white-border: rgba(255, 255, 255, .10);
+    --ease: cubic-bezier(.22, 1, .36, 1);
 }
-
 
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
 }
 
-
 html {
-
     scroll-behavior: smooth;
-
 }
 
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-
-    background:
-        var(--black);
-
-    color:
-        var(--cream);
-
-    overflow-x:
-        hidden;
-
+    background: var(--black);
+    color: var(--cream);
+    overflow-x: hidden;
 }
-
 
 img {
-    display:
-        block;
-
-    max-width:
-        100%;
+    display: block;
+    max-width: 100%;
 }
-
 
 a {
-
-    color:
-        inherit;
-
-    text-decoration:
-        none;
-
+    color: inherit;
+    text-decoration: none;
 }
-
 
 /* Nav Bar */
 .navbar {
@@ -168,180 +127,88 @@ nav a:hover::after {
 /* MENU */
 
 .menu-circle {
-
-    width:
-        35px;
-
-    height:
-        35px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
-
-    gap:
-        4px;
-
-    border:
-        1px solid var(--gold);
-
-    border-radius:
-        50%;
-
-    transition:
-        .4s ease;
-
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    transition: .4s ease;
 }
-
 
 .menu-circle:hover {
-
-    background:
-        var(--gold);
-
+    background: var(--gold);
 }
-
 
 .menu-circle span {
-
-    width:
-        13px;
-
-    height:
-        1px;
-
-    background:
-        var(--cream);
-
+    width: 13px;
+    height: 1px;
+    background: var(--cream);
 }
 
-
 .hero {
-
-    position:
-        relative;
-
-    min-height:
-        100vh;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    overflow:
-        hidden;
-
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 
 /* HERO IMAGE */
 
 .hero-image {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    background:
-        url("musem_images/hero.png") center center / cover no-repeat;
-
-    transform:
-        scale(1.04);
-
-    animation:
-        heroZoom 14s ease-out forwards;
-
+    position: absolute;
+    inset: 0;
+    background: url("musem_images/hero.png") center center / cover no-repeat;
+    transform: scale(1.04);
+    animation: heroZoom 14s ease-out forwards;
 }
 
-
 .hero-dark {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
+    position: absolute;
+    inset: 0;
     background:
-
         linear-gradient(90deg,
             rgba(5, 5, 6, .94) 0%,
             rgba(5, 5, 6, .75) 38%,
             rgba(5, 5, 6, .25) 100%),
-
         linear-gradient(0deg,
             rgba(5, 5, 6, .85),
             transparent 45%,
             rgba(0, 0, 0, .35));
-
 }
 
 .hero-pattern {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    opacity:
-        .12;
-
+    position: absolute;
+    inset: 0;
+    opacity: .12;
     background-image:
-
         linear-gradient(rgba(201, 149, 61, .35) 1px,
             transparent 1px),
-
         linear-gradient(90deg,
             rgba(201, 149, 61, .35) 1px,
             transparent 1px);
-
-    background-size:
-        100px 100px;
-
-    mask-image:
-        linear-gradient(to bottom,
+    background-size: 100px 100px;
+    mask-image: linear-gradient(to bottom,
             transparent,
             black 35%,
             transparent);
-
 }
 
 
 /* HERO CONTENT */
 
 .hero-content {
-
-    position:
-        relative;
-
-    z-index:
-        5;
-
-    width:
-        600px;
-
-    margin-left:
-        4.8vw;
-
-    padding-top:
-        70px;
-
-    animation:
-        heroEnter 1.2s var(--ease) forwards;
-
+    position: relative;
+    z-index: 5;
+    width: 600px;
+    margin-left: 4.8vw;
+    padding-top: 70px;
+    animation: heroEnter 1.2s var(--ease) forwards;
 }
 
 
